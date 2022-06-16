@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let logItem of clickLog;
+        let i = index"
+        [ngStyle]="{backgroundColor: getBackgroundColor(i)}"
+        [ngClass]="{'list-item-5-up': i >= 4}">
+        {{i+1}}. {{logItem}}
+    </li>
+</ul>

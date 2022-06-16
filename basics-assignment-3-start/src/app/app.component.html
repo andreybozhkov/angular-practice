@@ -9,5 +9,8 @@
         <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color (ngClass)</li>
       </ol>
     </div>
+    <button (click)="toggleDisplay()">Display Details</button>
+    <paragraph *ngIf="displayParagraph"></paragraph>
+    <log-list *ngIf="clickLog.length > 0" [clickLog]="clickLog"></log-list>
   </div>
 </div>

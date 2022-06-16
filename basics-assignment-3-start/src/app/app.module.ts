@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
+import { ParagraphComponent } from './paragraph/paragraph.component';
+import { LogListComponent } from './logList/logList.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ParagraphComponent,
+    LogListComponent
   ],
   imports: [
     BrowserModule,
